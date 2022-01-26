@@ -7,7 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <style type='text/css'>
+    <a id="liveagent_button_online_57305000000Caeq" href="javascript://Chat" style="display: none;"
+        onclick="liveagent.startChat('57305000000Caeq')">
+        <!-- Online Chat Content -->
+    </a>
+    <div id="liveagent_button_offline_57305000000Caeq" style="display: none;">
+        <!-- Offline Chat Content -->
+    </div>
+    <script type="text/javascript">
+        if (!window._laq) { window._laq = []; }
+        window._laq.push(function () {
+            liveagent.showWhenOnline('57305000000Caeq', document.getElementById('liveagent_button_online_57305000000Caeq'));
+            liveagent.showWhenOffline('57305000000Caeq', document.getElementById('liveagent_button_offline_57305000000Caeq'));
+        });
+    </script>
+    <!-- <style type='text/css'>
         .embeddedServiceHelpButton .helpButton .uiButton {
             background-color: #005290;
             font-family: "Arial", sans-serif;
@@ -15,9 +29,9 @@
         .embeddedServiceHelpButton .helpButton .uiButton:focus {
             outline: 1px solid #005290;
         }
-    </style>
+    </style> -->
     
-    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <!-- <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
     <script type='text/javascript'>
         var initESW = function(gslbBaseURL) {
             embedded_svc.settings.displayHelpButton = true; //Or false
@@ -68,6 +82,6 @@
         } else {
             initESW('https://service.force.com');
         }
-    </script>
+    </script> -->
 </body>
 </html>
